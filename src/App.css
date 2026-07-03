@@ -552,3 +552,181 @@ body {
     height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   }
 }
+
+/* ===== REACCIONES ===== */
+.nota-reacciones {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 4px 0;
+}
+
+.nota-reaccion {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.nota-reaccion:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.nota-reaccion.activa {
+  border-color: #6c63ff;
+  background: rgba(108, 99, 255, 0.15);
+}
+
+.nota-reaccion-btn {
+  opacity: 0.4;
+  transition: all 0.2s;
+  font-size: 0.8rem;
+  padding: 0 4px;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.nota-reaccion-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Ajuste para notas en el tablero */
+.nota-item .nota-reaccion {
+  font-size: 0.65rem;
+  padding: 1px 6px;
+}
+
+.nota-item .nota-footer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* ===== EDICIÓN DE NOTA ===== */
+.nota-editar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.nota-editar-textarea {
+  flex: 1;
+  min-height: 60px;
+  resize: none;
+  width: 100%;
+  border: 2px solid rgba(108, 99, 255, 0.4);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.nota-editar-textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+.nota-editar-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+/* ===== REACCIONES ===== */
+.nota-reacciones {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 4px 0;
+}
+
+.nota-reaccion {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.65rem;
+  padding: 1px 6px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.nota-reaccion:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.nota-reaccion.activa {
+  border-color: #6c63ff;
+  background: rgba(108, 99, 255, 0.15);
+}
+
+.nota-reaccion-btn {
+  opacity: 0.4;
+  transition: all 0.2s;
+  font-size: 0.8rem;
+  padding: 0 4px;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nota-reaccion-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ===== NOTA FOOTER ===== */
+.nota-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 6px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nota-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nota-action-btn {
+  opacity: 0.3;
+  transition: all 0.2s;
+  padding: 0 4px;
+  min-width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.nota-action-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
